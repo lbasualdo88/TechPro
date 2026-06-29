@@ -1,0 +1,43 @@
+.header {
+    background-color: var(--negro);
+    padding: 1rem 0;
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.contenido-header {
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.texto-header {
+    text-align: center;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    p {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    h1 {
+        font-size: 6rem;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            font-size: 8rem;
+            line-height: .8;
+        }
+        @media (min-width: 1200px) {
+            font-size: 12rem;
+            line-height: 1;
+        }
+    }
+}

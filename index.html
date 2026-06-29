@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPRO Audífonos</title>
+    <meta name="description" content="TechPRO Audífonos — Sonido profesional con la mejor calidad. Descubrí nuestros modelos TechPRO X, Y y Z con garantía de por vida y +20 horas de batería.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <img loading="lazy" decoding="async" src="img/header.png" alt="Audífonos TechPRO" >  
+            </div>
+
+            <div class="texto-header">
+                <p> Sonido Profesional</p>
+                <h1 class="degradado-verde">TechPRO</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <div class="iconos">
+            <div class="icono">
+                <img src="img/icono-sonido.svg" alt="Icono de sonido" data-bs-toggle="tooltip" title="Sonido de alta fidelidad">
+                <h2>Gran Sonido</h2>
+                <p>Viví cada nota con una claridad excepcional. Los TechPRO ofrecen un rango sonoro envolvente que transforma tu música favorita en una experiencia única.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono-garantia.svg" alt="Icono de garantía" data-bs-toggle="tooltip" title="Garantía de por vida sin costo">
+                <h2>Garantía de por vida</h2>
+                <p>Comprás con total confianza. Todos nuestros modelos están cubiertos por una garantía integral que respalda tu inversión de por vida.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono-bateria.svg" alt="Icono de batería" data-bs-toggle="tooltip" title="Más de 20 horas de reproducción">
+                <h2>+20 Horas de Batería</h2>
+                <p>Disfrutá de tu música sin interrupciones. Con más de 20 horas de autonomía, los TechPRO te acompañan durante todo el día sin preocuparte por cargarlos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-tech">
+            <div class="texto-sobre-tech">
+                <h2>Sobre los <span>TechPRO</span> </h2>
+                <p>Los TechPRO combinan tecnología de punta con un diseño ergonómico pensado para audiófilos exigentes. Cada componente fue seleccionado para brindar una experiencia sonora superior, ya sea en casa, en la oficina o en movimiento.</p>
+            </div>
+            <div class="img-sobre-tech">
+                <img src="img/imagen-mujer.jpg" alt="imagen mujer">
+            </div>       
+    </section>
+
+    <main class="contenedor modelos">
+        <h2 class="text-center degradado-verde header-modelos">Elige tus TechPRO</h2>
+
+        <div class="listado-modelos">
+            <a href="carrito.html?modelo=x">
+                <div class="modelo modelo-x">
+                    <h3>TechPRO X</h3>
+                    <p class="precio">$299</p>
+                </div>
+            </a>
+            <a href="carrito.html?modelo=y">
+                 <div class="modelo modelo-y">
+                    <h3>TechPRO Y</h3>
+                    <p class="precio">$399</p>
+                </div>
+            </a>
+            <a href="carrito.html?modelo=z">
+                <div class="modelo modelo-z">
+                    <h3>TechPRO Z</h3>
+                    <p class="precio">$499</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <section class="newsletter">       
+            <div class="img-newsletter">
+                <img src="/img/newsletter.jpg" alt="imagen-newsletter">
+            </div>
+            <div class="texto-newsletter">
+                <h2>Recibe Actualizaciones</h2>
+                <p>Suscribite a nuestro newsletter y recibí las últimas novedades, lanzamientos exclusivos y ofertas especiales directamente en tu correo. No te pierdas nada del mundo TechPRO.</p>
+
+                <form class="formulario">
+                    <div class="input">
+                        <input type="text" placeholder="Tu Email" >
+                    </div>
+                    <input type="submit" id="btn-inscribir-newsletter" value="Inscribirme">
+                </form>
+            </div>      
+    </section>
+
+    <!-- Modal de Bootstrap -->
+<div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="suscripcionModalLabel">¡Gracias por tu suscripción!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Has sido suscrito exitosamente a nuestras actualizaciones.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/modal-newsletter.js"></script>
+    <script src="js/tooltips.js"></script>
+</body>
+</html>

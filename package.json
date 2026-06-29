@@ -1,0 +1,15 @@
+{
+  "name": "techpro-audifonos",
+  "version": "1.0.0",
+  "description": "Sitio web de comercio electrónico para audífonos TechPRO",
+  "scripts": {
+    "sass:build": "sass scss/main.scss css/main.css",
+    "sass:watch": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

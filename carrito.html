@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPRO - Carrito de Compras</title>
+    <meta name="description" content="Finalizá tu compra de audífonos TechPRO. Completá tus datos personales, de envío y pago de forma segura.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="btn-volver-wrapper">
+            <a href="index.html" class="btn-volver"> Volver a la tienda</a>
+        </div>
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <picture>
+                    <img loading="lazy" decoding="async" src="img/header.png" alt="Audífonos TechPRO">
+                </picture>
+            </div>
+
+            <div class="texto-header">
+                <p>Sonido Profesional</p>
+                <h1 class="degradado-verde">TechPRO</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor carrito-compras">
+
+        <section class="resumen-pedido">
+            <h2 class="subtitulo-carrito">Resumen del Pedido</h2>
+            <div class="producto-carrito">
+                <div class="info-producto">
+                    <div class="producto">
+                        <img id="producto-imagen" src="img/modelo-x.svg" alt="Audífono TechPRO X">
+                        <h3 id="producto-nombre-corto">TechPRO X</h3>
+                    </div>
+                    <div class="detalles-producto">
+                        <p id="producto-nombre">Audífonos TechPRO X</p>
+                        <p class="precio-producto-item"><span id="producto-precio">$ 299</span></p>
+                        <div class="controles-cantidad">
+                            <button class="btn-cantidad" type="button">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-cantidad" type="button">+</button>
+                        </div>
+                        <button class="btn-eliminar" type="button">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="totales-carrito">
+                <p>Subtotal: <span id="subtotal-valor">$299</span></p>
+                <p>Total: <span id="total-valor">$299</span></p>
+            </div>
+        </section>
+
+        <section class="datos-usuario">
+            <h2 class="subtitulo-carrito">Datos Personales</h2>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
+                </div>
+            </form>
+        </section>
+
+        <section class="datos-envio">
+            <h2 class="subtitulo-carrito">Datos de Envío</h2>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Tu Dirección" required>
+                </div>
+                <div class="campo">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Tu Ciudad" required>
+                </div>
+                <div class="campo">
+                    <label for="codigo-postal">Código Postal:</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" placeholder="Tu Código Postal" required>
+                </div>
+                <img class="img-mapa" src="/img/Location_map_Malaga.png" alt="imagen de mapa">
+            </form>
+        </section>
+
+        <section class="datos-pago">
+            <h2 class="subtitulo-carrito">Datos del Pago</h2>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="numero-tarjeta">Número de Tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="**** **** **** ****" required>
+                </div>
+                <div class="fila-dos-campos">
+                    <div class="campo">
+                        <label for="vencimiento">Vencimiento:</label>
+                        <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cvc">CVC:</label>
+                        <input type="text" id="cvc" name="cvc" placeholder="CVC" required>
+                    </div>
+                </div>
+            </form>
+            <div class="compra-protegida">
+                <img src="img/depositphotos_89969576-stock-illustration-secure-shopping-icon.jpg" alt="Imagen compra segura">
+                <p>Compra Protegida</p>
+            </div>
+        </section>
+
+        <div class="acciones-finales">
+            <button class="btn-finalizar-compra">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

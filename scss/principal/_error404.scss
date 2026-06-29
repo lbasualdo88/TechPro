@@ -1,0 +1,51 @@
+.pagina-404 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pagina-404 main {
+  flex: 1;
+}
+
+.error-404 {
+  text-align: center;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  &__codigo {
+    font-size: 12rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+  }
+
+  &__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--negro);
+    margin: 0;
+  }
+
+  &__texto {
+    font-size: 1.8rem;
+    color: var(--gris);
+    margin: 0;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.5rem 4rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 900;
+    border-radius: 1rem;
+    text-decoration: none;
+  }
+}

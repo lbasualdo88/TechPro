@@ -1,0 +1,48 @@
+#btn-inscribir-newsletter {
+  background-color: var(--primario);
+  color: var(--blanco);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-body {
+  text-align: center;
+  padding-top: 0;
+}
+
+.modal-footer {
+  border-top: none;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.modal-body p {
+  font-size: 1.8rem;
+}
+
+.modal-title {
+  font-size: 2.2rem;
+}
+
+.btn-secondary {
+  background-color: var(--primario);
+  border-color: var(--primario);
+  color: var(--blanco);
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 1rem;
+}
